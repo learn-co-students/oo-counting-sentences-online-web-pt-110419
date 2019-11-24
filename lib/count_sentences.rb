@@ -1,5 +1,6 @@
 require 'pry'
 
+
 class String
 
   def sentence?
@@ -8,8 +9,7 @@ class String
       else false
     end
   end
-
-  def question?
+ def question?
     if self.end_with?("?")
       true 
     else
@@ -28,6 +28,5 @@ class String
   def count_sentences
     self.split(/[.!?]/).reject {|x|x.empty?}.size
   end
-  
-  
 end
+ 
