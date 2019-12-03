@@ -16,16 +16,15 @@ class String
 
   def count_sentences
     # how can I modify line 19 to pass the last test?
-    # self.split(/[\s.?]/).reject(&:empty?).count
-    if self.split(/[\s.?]/).reject(&:empty?).count == 3
-      return 3
-    elsif self.split(/[\s.?]/).reject(&:empty?).count == 0
-      return 0
-    else self.split(/[\s.!?]/).count == 4
-      return 4
-
-      # binding.pry
-    end
-
+    #^answer.....I removed \s from (/[\s.!?]/) because \s is for whitespace characters
+    self.split(/[.!?]/).reject(&:empty?).count
+    # if self.split(/[\s.?]/).reject(&:empty?).count == 3
+    #   return 3
+    # elsif self.split(/[\s.?]/).reject(&:empty?).count == 0
+    #   return 0
+    # else self.split(/[\s.!?]/).count == 4
+    #   return 4
+    #   # binding.pry
+    # end
   end
 end
