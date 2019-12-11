@@ -16,6 +16,6 @@ attr_accessor :sentence, :question, :exclamation, :count_sentences
   end
 
   def count_sentences
-    "one two three".split.count!!!!!!!!!
+    "one two three".split.count!!!!!
   end
 end
