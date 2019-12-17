@@ -1,20 +1,20 @@
-require 'pry'
+George = "Monkey"
 
-class String
+Monkey = ("Gorilla", "Chimp", "Capuchin")
 
-  def sentence?
+  "George is a monkey.".end_with?(.)
     
   end
 
-  def question?
+  "Is George a monkey?".end_with?(?)
 
   end
 
-  def exclamation?
+  "George IS a monkey!".end_with(!)
 
   end
 
-  def count_sentences
+  "George is a monkey. The man with the yellow hat is his friend. They live together.".count_sentences
 
   end
 end
